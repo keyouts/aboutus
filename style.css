@@ -12,7 +12,7 @@ body {
       background: white;
       border: 4px solid #1470AF;
       box-shadow: 10px 10px 0 #1470AF;
-      width: 300px;
+      width: 400px;
       max-width: 100%;
     }
 
@@ -40,7 +40,7 @@ body {
 
     .content {
  
-      padding: 15px;
+      padding: 20px;
       font-size: 1.2rem;
       color: #1470AF;
       min-height: 100px;
