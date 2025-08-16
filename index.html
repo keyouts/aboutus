@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <title>about_us.exe</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>about_us.exe</title>
   <link rel="stylesheet" href="./style.css">
+  <style>
+    .sr-only {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+  </style>
 </head>
-<body>
-<!-- partial:index.partial.html -->
 <body>
   <div class="window">
     <div class="title-bar">
@@ -15,13 +23,22 @@
         <div></div><div></div><div></div>
       </div>
     </div>
-    <div class="content" id="typewriter" data-text="<i><b>KeyOuts</b></i> is a web development service in Mechanicsburg, PA. <p>We offer hourly rates for small businesses. <p>Contact us for a quote.<p><i><b>'We keep our site simple to focus on yours!'</b></i>">
-      <span id="typed"></span><span class="cursor"></span>
+    <div class="content" id="typewriter"
+         data-text="<i><b>KeyOuts</b></i> is a web development service in Mechanicsburg, PA. <p>We offer hourly rates for small businesses. <p>Contact us for a quote.<p><i><b>'We keep our site simple to focus on yours!'</b></i>">
+      <span id="typed" aria-live="polite"></span>
+      <span class="cursor"></span>
     </div>
   </div>
-</body>
-<!-- partial -->
-  <script  src="./script.js"></script>
 
+  <!-- Visually hidden fallback for screen readers -->
+  <div class="sr-only">
+    <i><b>KeyOuts</b></i> is a web development service in Mechanicsburg, PA.
+    We offer hourly rates for small businesses.
+    Contact us for a quote.
+    <i><b>'We keep our site simple to focus on yours!'</b></i>
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
+
