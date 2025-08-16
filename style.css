@@ -2,12 +2,12 @@ html, body {
   margin: 0;
   padding: 0;
   height: auto;
-  min-height: 100%;
   background-color: #EAEAEE;
   font-family: 'Courier New', Courier, monospace;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+body {
+  display: block;
 }
 
 .window {
@@ -16,6 +16,7 @@ html, body {
   box-shadow: 10px 10px 0 #1470AF;
   width: 320px;
   max-width: 100%;
+  margin: 40px auto; /* centers the widget without flex */
 }
 
 .title-bar {
