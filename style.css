@@ -12,15 +12,15 @@ body {
 
 .window {
   background: white;
-  border: 4px solid #115C8D;
-  box-shadow: 10px 10px 0 #115C8D;
+  border: 4px solid #105584;
+  box-shadow: 10px 10px 0 #105584;
   width: 320px;
   max-width: 100%;
   margin: 40px auto;
 }
 
 .title-bar {
-  background: #115C8D;
+  background: #105584;
   color: white;
   padding: 10px;
   font-weight: bold;
@@ -38,13 +38,13 @@ body {
   width: 12px;
   height: 12px;
   background: white;
-  border: 2px solid #115C8D;
+  border: 2px solid #105584;
 }
 
 .content {
   padding: 20px;
   font-size: 1.2rem;
-  color: #115C8D;
+  color: #105584;
   min-height: 100px;
   white-space: normal;
   text-align: center;
@@ -53,7 +53,7 @@ body {
 .cursor {
   display: inline-block;
   width: 10px;
-  background: #115C8D;
+  background: #105584;
   animation: blink 1s step-start infinite;
 }
 
